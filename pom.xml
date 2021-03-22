@@ -16,6 +16,19 @@
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
   
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DESKTOP-5E14FP7-releases</name>
+        <url>http://localhost:8081/artifactory/my-maven</url>
+    </repository>
+    <snapshotRepository>
+        <id>central</id>
+        <name>DESKTOP-5E14FP7-snapshots</name>
+        <url>http://localhost:8081/artifactory/my-maven</url>
+    </snapshotRepository>
+</distributionManagement>
+  
   <modules>
   <module>sub</module>
   <module>add</module>
